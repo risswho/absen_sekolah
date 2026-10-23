@@ -23,7 +23,13 @@ class EditSiswa extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'id' => 'required',
+            'username' => 'required',
+            'password' => 'nullable',
+            'id_kelas' => 'required',
+            'nama' => 'required',
+            'no_hp' => 'nullable',
+            'nip' => 'nullable',
         ];
     }
 }
