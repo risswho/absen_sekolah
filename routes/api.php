@@ -13,5 +13,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/currentUser', [AuthController::class, 'getCurrentUser']);
 
     //ambil semua data kelas
-    Route::get('/kelas', [])
+    // Route::get('/kelas', [])
 });
